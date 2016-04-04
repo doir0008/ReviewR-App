@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://griffis.edumedia.ca data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0" />
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"> -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>ReviewR</title>
+</head>
+<body>
+    
+<section data-role="page" id="review" class="inactive-page" >
+    <header>
+        <h2>Add a Pic &amp; Review</h2>
+    </header>
+    <article>
+        <div id="wrapper">
+            <div id="picBtn"><img src="img/add_pic.png" alt="" id="image"/></div>
+            <!-- <button id="picBtn">Take Pic</button> -->
+            <textarea rows="1" cols="30" name="title" id="title">Enter a title</textarea>
+            <textarea rows="4" cols="30" name="comments" id="comments">Comment on this picture</textarea>
+            <p>Rate this photo:</p>
+            <fieldset class="rating">
+                <input type="radio" id="star5" name="rating" class="starRating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4" name="rating" class="starRating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3" name="rating" class="starRating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="star2" name="rating" class="starRating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1" name="rating" class="starRating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+            </fieldset>
+        <p id="upload"><a href="#listReview" id="btnUpload" class="page-link">Upload</a></p>
+        </div>
+    </article>
+</section>    
+    
+<section data-role="page" id="listReview" class="inactive-page">
+    <header>
+        <h2>List of Reviews</h2>
+    </header>
+    <article id="listHere">
+
+        
+    </article>
+</section>
+    
+<section data-role="page" id="singleReview" class="inactive-page">
+    <header>
+        <h2>Single view of review</h2>
+    </header>
+    <article id="singleReviewHere">
+        
+    </article>
+</section>
+
+<nav>
+    <a href="#listReview" class="page-link" id="listbtn">List</a>
+    <a href="#review" class="page-link" id="reviewsbtn">Review</a>
+    <a href="#singleReview" class="page-link" id="detailsbtn">Details</a>
+</nav> 
+
+<script type="text/javascript" src="js/hammer.min.js"></script>
+<script charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
+

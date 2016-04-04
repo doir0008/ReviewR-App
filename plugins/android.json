@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ca.edumedia.doir0008.reviewR"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "ca.edumedia.doir0008.reviewR"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "ca.edumedia.doir0008.reviewR"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ca.edumedia.doir0008.reviewR"
+        }
+    },
+    "dependent_plugins": {}
+}
